@@ -22,7 +22,7 @@ public class SalaForm {
     private List<Lugar> lugares = new ArrayList<>();
     
     @NotNull
-    private BigDecimal preco;
+    private BigDecimal preco = BigDecimal.ZERO;
 
     public SalaForm() {
     }
