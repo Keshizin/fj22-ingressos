@@ -17,7 +17,7 @@ public class OmdbClient {
 		String url = String.format("https://omdb-fj22.herokuapp.com/movie?title=%s", titulo);
 		
 		try {
-			return Optional.ofNullable(client.getForObject(url, tClass));
+			return Optional.of(client.getForObject(url, tClass));
 		}
 		
 		catch(RestClientException e) {
